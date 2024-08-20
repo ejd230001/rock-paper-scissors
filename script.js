@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 // Goal: Function to generate random computer choice
 // Steps: (1) Generate a random number between 0-2, 
 // (2) Use switch statement to turn this number into an option
@@ -15,15 +22,21 @@ function getComputerChoice() {
             break;
 
         case 1:
-            choice = "Paper"
+            choice = "Paper";
             break;
 
         case 2:
-            choice = "Scissors"
+            choice = "Scissors";
             break;
     }
 
     return choice;
 }
 
-console.log(getComputerChoice());
+// Goal: Function to take user for a choice
+
+function getHumanChoice() {
+    let choice = prompt("Please enter Rock, Paper, or Scissors: ");
+    return choice;
+}
+
